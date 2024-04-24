@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Comfortaa:wght@300&family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking time to help us improve the platform
+        </p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age
+              <p class="small-text">(optional)</p></label
+            >
+            <input
+              id="number"
+              type="number"
+              min="15"
+              max="70"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <label id="dropdown-label" for="dropdown"
+              >Which option best describes your current role?</label
+            >
+            <select id="dropdown">
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full time job</option>
+              <option value="learner">Full time learner</option>
+              <option value="preferNotToSay">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="radio-label"
+              >Would you recommend freeCodeCamp to a friend?</label
+            >
+            <div class="alignment">
+              <input
+                id="definitely"
+                name="recommend"
+                type="radio"
+                value="definitely"
+              />
+              <label for="definitely"> Definitely</label>
+            </div>
+            <div class="alignment">
+              <input
+                id="maybe"
+                name="recommend"
+                type="radio"
+                value="maybe"
+              /><label for="maybe">Maybe</label>
+            </div>
+            <div class="alignment">
+              <input
+                id="notSure"
+                name="recommend"
+                type="radio"
+                value="notSure"
+              /><label for="notSure">Not Sure</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label id="dropdown-label" for="dropdown-feature"
+              >What is your favourite feature of freeCodeCamp?</label
+            >
+            <select id="dropdown-feature">
+              <option disabled selected value>Select an option</option>
+              <option value="challanges">Challanges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="improved-checkbox"
+              >What would you like to see improved?
+              <p class="small-text">(Check all that apply)</p></label
+            >
+            <div class="alignment">
+              <input
+                id="front-end-projects"
+                type="checkbox"
+                value="front-end-projects"
+              /><label for="front-end-projects">Front-end Projects</label>
+            </div>
+            <div class="alignment">
+              <input
+                id="back-end-projects"
+                type="checkbox"
+                value="back-end-projects"
+              /><label for="back-end-projects">Back-end Projects</label>
+            </div>
+            <div class="alignment">
+              <input
+                id="data-visualization"
+                type="checkbox"
+                value="data-visualization"
+              /><label for="data-visualization">Data Visualization</label>
+            </div>
+            <div class="alignment">
+              <input id="challanges" type="checkbox" value="challanges" /><label
+                for="challanges"
+                >Challanges</label
+              >
+            </div>
+            <div class="alignment">
+              <input
+                id="open-source-community"
+                type="checkbox"
+                value="open-source-community"
+              /><label for="open-source-community">Open Source Community</label>
+            </div>
+            <div class="alignment">
+              <input
+                id="gitter-help-rooms"
+                type="checkbox"
+                value="gitter-help-rooms"
+              /><label for="gitter-help-rooms">Gitter Help Rooms</label>
+            </div>
+            <div class="alignment">
+              <input id="videos" type="checkbox" value="videos" /><label
+                for="videos"
+                >Videos</label
+              >
+            </div>
+            <div class="alignment">
+              <input
+                id="city-meetups"
+                type="checkbox"
+                value="city-meetups"
+              /><label for="city-meetups">City Meetups</label>
+            </div>
+            <div class="alignment">
+              <input id="wiki" type="checkbox" value="wiki" /><label for="wiki"
+                >Wiki</label
+              >
+            </div>
+            <div class="alignment">
+              <input id="forum" type="checkbox" value="forum" /><label
+                for="forum"
+                >Forun</label
+              >
+            </div>
+            <div class="alignment">
+              <input
+                id="additional-courses"
+                type="checkbox"
+                value="additional-courses"
+              /><label for="additional-courses">Additional Courses</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textarea" id="comments-or-suggestions"
+              >Any Comments or Suggestions?</label
+            >
+            <textarea
+              id="textarea"
+              name="comments"
+              rows="7"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
